@@ -1464,6 +1464,8 @@
 &ufs_mem_hc {
 	status = "okay";
 
+	reset-gpios = <&tlmm 175 GPIO_ACTIVE_LOW>;
+
 	/* Some Samsung UFS parts cannot hold the link at HS-G4 on this board */
 	limit-hs-gear = <3>;
 
